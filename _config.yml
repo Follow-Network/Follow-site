@@ -13,12 +13,12 @@ people:
   pic: 1
   position: Business analytics and strategy development
   social:
-    - title: twitter
-      url: #
+    - title: github
+      url: https://github.com/BaldyAsh
+    - title: linkedin
+      url: linkedin.com/in/anton-grigoriev-a29122163/
     - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+      url: https://www.facebook.com/profile.php?id=100014712275768
 
 - name: Goergiy FESENKO
   pic: 2
@@ -35,12 +35,12 @@ people:
   pic: 3
   position: Main Smart-Trading Modules developer and data scientist
   social:
-    - title: twitter
-      url: #
+    - title: github
+      url: https://github.com/Ir1ha
+    - title: linkedin
+      url: ww.linkedin.com/in/gilmanovr
     - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://www.facebook.com/gilmanovr
 
 - name: Gleb ZABLUDOVSKY
   pic: 4
@@ -51,6 +51,28 @@ people:
     - title: linkedin
       url: #
     - title: facebook
+      url: #
+
+- name: Egor KURNIKOV
+  pic: 5
+  position: Main mobile developer
+  social:
+    - title: github
+      url: https://github.com/kurnegor
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+- name: Anton DMITRIEV
+  pic: 6
+  position: Main frontend developer
+  social:
+    - title: github
+      url: https://github.com/kabachok169
+    - title: facebook
+      url: #
+    - title: google-plus
       url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
