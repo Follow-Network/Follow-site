@@ -288,7 +288,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #fff;
+    background-color: #{{ site.data.template.color.secondary-light }};
+    opacity: .8;
     font-size: 20pt;
     font-weight: 200;
 }
@@ -358,7 +359,8 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 15px 0;
         border: 0;
-        background-color: transparent;
+        background-color: #{{ site.data.template.color.secondary-light }};
+        opacity: .8;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -378,7 +380,8 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #fff;
+        background-color: #{{ site.data.template.color.secondary-light }};
+        opacity: .8;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -431,7 +434,7 @@ header .h1 {
     bottom: 20px;
     font-family: {{ site.data.template.font.primary }};
     font-size: 52px;
-    font-weight: 524;
+    font-weight: 800;
     line-height: 52px;
     color: #{{ site.data.template.color.primary }};
 }
@@ -441,7 +444,7 @@ header .h2 {
     bottom: 20px;
     font-family: {{ site.data.template.font.primary }};
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 18x;
     color: #{{ site.data.template.color.primary }};
 }
@@ -452,7 +455,7 @@ header .h3 {
     bottom: 20px;
     font-family: {{ site.data.template.font.primary }};
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 13px;
     color: #{{ site.data.template.color.secondary-dark }};
 }
@@ -502,7 +505,7 @@ header .h3 {
         right: 0px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 58px;
-        font-weight: 524;
+        font-weight: 800;
         line-height: 58px;
         color: #{{ site.data.template.color.primary }};
     }
@@ -513,7 +516,7 @@ header .h3 {
         right: 0px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 21px;
-        font-weight: 370;
+        font-weight: 400;
         line-height: 21px;
         color: #{{ site.data.template.color.primary }};
     }
@@ -525,7 +528,7 @@ header .h3 {
         right: 0px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 15px;
-        font-weight: 315;
+        font-weight: 200;
         line-height: 15px;
         color: #{{ site.data.template.color.secondary-dark }};
     }
