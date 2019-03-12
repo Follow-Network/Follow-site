@@ -1,100 +1,62 @@
-url: https://github.com/FollowInc/FollowInc.github.io
-baseurl: 
+plugins:
+  - jekyll-feed
+
+url: https://thefollow.io/follow-site/
+baseurl:
 
 # Site settings
-title: FOLLOW
-email: dimaty26rus@mail.ru
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Follow
+email: hello@thefollow.inc
+description: "Social Trading Ecosystem"
 
 
 # Team names, titles and social links
 people:
-- name: Anton GRIGOREV
+- name: Anton
   pic: 1
-  position: Business analytics and strategy development
+  position: Founder
   social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/nsspace/
     - title: github
       url: https://github.com/BaldyAsh
-    - title: linkedin
-      url: linkedin.com/in/anton-grigoriev-a29122163/
-    - title: facebook
-      url: https://www.facebook.com/profile.php?id=100014712275768
-
-- name: Goergiy FESENKO
-  pic: 2
-  position: Head of services and products development
-  social:
     - title: twitter
-      url: #
-    - title: facebook
-      url: #
+      url: https://twitter.com/NS_Space
+  description: Crypto enthusiast and blockchain developer. 2+ years of software development for scientific purposes (spacecraft), 1 year in DApps development from scratch.<br />Worked on mobile blockchain and fintech open source projects.<br />Specialist in Rocket engineering, Bauman Moscow State Technical University
+
+
+- name: Petr
+  pic: 2
+  position: Advisor
+  social:
     - title: linkedin
-      url: #
-
-- name: Rishat GILMANOV
-  pic: 3
-  position: Main Smart-Trading Modules developer and data scientist
-  social:
+      url: https://www.linkedin.com/in/korolevpetr/
     - title: github
-      url: https://github.com/Ir1ha
-    - title: linkedin
-      url: ww.linkedin.com/in/gilmanovr
-    - title: facebook
-      url: https://www.facebook.com/gilmanovr
-
-- name: Gleb ZABLUDOVSKY
-  pic: 4
-  position: Main backend developer
-  social:
-    - title: github
-      url: https://github.com/GlebZabl
-    - title: linkedin
-      url: #
-    - title: facebook
-      url: #
-
-- name: Egor KURNIKOV
-  pic: 5
-  position: Main mobile developer
-  social:
-    - title: github
-      url: https://github.com/kurnegor
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
-
-- name: Anton DMITRIEV
-  pic: 6
-  position: Main frontend developer
-  social:
-    - title: github
-      url: https://github.com/kabachok169
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://github.com/skywinder
+    - title: twitter
+      url: https://twitter.com/skywinder
+  description: 10+ years experience in enterprise development and architecture for fintech solutions (banking systems, stock exchanges)<br />Worked on information security and protection of personal data.<br />Author and active participant of open source projects<br />MSc in Solid-State Physics,<br />Moscow State University
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/FollowInc
   - title: linkedin
-    url: http://linkedin.com/jekyll
+    url: https://www.linkedin.com/company/followinc/
+  - title: twitter
+    url: https://twitter.com/FollowInc
+  - title: facebook
+    url: https://www.facebook.com/FollowInc
+  - title: medium
+    url: https://medium.com/@FollowInc
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Around the world
+  - line: No kidding
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+theme: jekyll-theme-time-machine

@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://formspree.io/antongrigorjev2010@gmail.com",
                 type: "POST",
                 data: {
                     name: name,
@@ -26,6 +26,7 @@ $(function() {
                     email: email,
                     message: message
                 },
+                dataType: "json",
                 cache: false,
                 success: function() {
                     // Success message
@@ -33,7 +34,11 @@ $(function() {
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
                     $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
+                        .append("<strong>")
+                    $('#success > .alert-success')
+                        .append(firstName)
+                    $('#success > .alert-success')
+                        .append(", thank you for your message, we'll check it soon.</strong>");
                     $('#success > .alert-success')
                         .append('</div>');
 

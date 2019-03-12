@@ -1,30 +1,11 @@
-Agency Jekyll theme
+# Follow Site
 ====================
 
-Agency theme based on [Agency bootstrap theme ](https://startbootstrap.com/template-overviews/agency/)
+## How to use
+1. $ git clone https://github.com/FollowInc/FollowInc.github.io.git
+2. $ cd FollowInc.github.io
+3. $ bundle install
+4. $ bundle exec jekyll serve
+5. Open http://127.0.0.1:4000/
 
-# How to use
-
-###Portfolio 
-
-Portfolio projects are in '/_posts'
-
-Images are in '/img/portfolio'
-
-###About
-
-Images are in '/img/about/'
-
-###Team
-
-Team members and info are in '_config.yml'
-
-Images are in '/img/team/'
-
-
-# Demo
-
-View this jekyll theme in action [here](https://y7kim.github.io/agency-jekyll-theme)
-
-=========
-For more details, read [documentation](http://jekyllrb.com/)
+If you don't have Jekyll - complete installation is on their website https://jekyllrb.com/docs/installation/
