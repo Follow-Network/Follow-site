@@ -155,7 +155,6 @@ h6 {
 
 .btn-primary {
     border-color: #{{ site.data.template.color.primary }};
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
     color: #{{ site.data.template.color.secondary-dark }};
@@ -203,22 +202,20 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 10px;
+    padding-top: 5px;
     text-align: center;
     width: 60%;
     margin: 0 auto;
     display: block;
-    border-color: transparent;
+    border-color: #{{ site.data.template.color.primary }};;
     color: #{{ site.data.template.color.secondary-light }};
     background-color: #{{ site.data.template.color.primary }};
     text-align: center;
     border-radius: 25px;
     height: 50px;
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 20px;
-    font-weight: 300;
-    color: #{{ site.data.template.color.secondary-light }};
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .btn-xl:hover,
@@ -226,9 +223,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: transparent;
-    color: #{{ site.data.template.color.secondary-light }};
-    background-color: #{{ site.data.template.color.secondary }};
+    border-color: #{{ site.data.template.color.primary }};
+    color: #{{ site.data.template.color.primary }};
+    background-color: #{{ site.data.template.color.secondary-light }};
 }
 
 .btn-xl:active,
@@ -252,33 +249,33 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: transparent;
+    border-color: #{{ site.data.template.color.primary }};;
+    color: #{{ site.data.template.color.secondary-light }};
     background-color: #{{ site.data.template.color.primary }};
 }
 
 .btn-xl .badge {
-    color: #{{ site.data.template.color.primary }};
-    background-color: #{{ site.data.template.color.secondary-light }};
+    border-color: #{{ site.data.template.color.primary }};;
+    color: #{{ site.data.template.color.secondary-light }};
+    background-color: #{{ site.data.template.color.primary }};
 }
 
-@media(min-width:1000px) {
+@media(min-width:768px) {
     .btn-xl {
-        padding: 10px;
+        padding-top: 10px;
         text-align: center;
         width: 30%;
         margin: 0 auto;
         display: block;
-        border-color: transparent;
+        border-color: #{{ site.data.template.color.primary }};;
         color: #{{ site.data.template.color.secondary-light }};
         background-color: #{{ site.data.template.color.primary }};
         text-align: center;
         border-radius: 29px;
         height: 58px;
-        text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 28px;
-        font-weight: 300;
-        color: #{{ site.data.template.color.secondary-light }};
+        font-size: 35;
+        font-weight: 400;
     }
 }
 
@@ -326,7 +323,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a {
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-weight: 400;
     letter-spacing: 1px;
@@ -338,24 +334,24 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    outline: 0;
+    outline: 10;
     color: #{{ site.data.template.color.primary }};
 }
 
 .navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #{{ site.data.template.color.secondary-light }};
+    border-radius: 10;
+    color: #{{ site.data.template.color.primary }};
     background-color: #{{ site.data.template.color.secondary }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    border-radius: 0;
-    color: #{{ site.data.template.color.secondary-light }};
+    border-radius: 10;
+    color: #{{ site.data.template.color.primary }};
     background-color: #{{ site.data.template.color.secondary }};
 }
 
-@media(min-width:1000px) {
+@media(min-width:768px) {
     .navbar-default {
         padding: 15px 0;
         border: 0;
@@ -394,8 +390,8 @@ fieldset[disabled] .btn-xl.active {
 */
 
 header {
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: auto;
+    padding-right: auto;
     text-align: center;
     background-attachment: scroll;
     background-color: #{{ site.data.template.color.secondary-light }};
@@ -407,26 +403,28 @@ header {
     -o-background-size: cover;
 }
 
+header .image {
+    display:block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 header .left {
     width: 100%;
 }
 
 header .right {
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 25px;
     width: 100%;
-    padding-top: 10px;
 }
 
 header .intro-text {
     padding-top: 50px;
     padding-bottom: 10px;
-}
-
-header .image {
-    display:block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
 }
 
 header .h1 {
@@ -454,10 +452,73 @@ header .h3 {
     top: 20px;
     bottom: 20px;
     font-family: {{ site.data.template.font.primary }};
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 200;
-    line-height: 13px;
+    line-height: 18px;
     color: #{{ site.data.template.color.secondary-dark }};
+}
+
+header .card-h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #{{ site.data.template.color.primary-dark }};
+}
+
+header .card-h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #{{ site.data.template.color.secondary-dark }};
+}
+
+header .image-background {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #{{ site.data.template.color.primary }};
+}
+
+header .img {
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+header .card {
+/* Add shadows to create the "card" effect */
+    width: 60%;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 2px solid #{{ site.data.template.color.primary }};
+}
+
+/* On mouse-over, add a deeper shadow */
+header .card:hover {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.4);
+}
+
+/* Add some padding inside the card container */
+header .container {
+    padding: 2px 16px;
 }
 
 @media(min-width:768px) {
@@ -477,10 +538,11 @@ header .h3 {
     }
 
     header .image {
-        margin-top: -100px;
-        margin-left: -50px;
-        margin-right: 0px;
-        width: 150%;
+        display:block;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 100%;
     }
 
     header .left {
@@ -488,10 +550,11 @@ header .h3 {
     }
 
     header .right {
+        margin-right: -20px;
         padding-left: 0px;
-        padding-right: 50px;
-        padding-top: 50px;
-        width: 50%;
+        padding-right: 0px;
+        padding-top: 0px;
+        width: 30%;
     }
 
     header .intro-text {
@@ -502,7 +565,6 @@ header .h3 {
     header .h1 {
         top: 20px;
         bottom: 20px;
-        right: 0px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 58px;
         font-weight: 800;
@@ -513,7 +575,6 @@ header .h3 {
     header .h2 {
         top: 20px;
         bottom: 20px;
-        right: 0px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 21px;
         font-weight: 400;
@@ -525,12 +586,73 @@ header .h3 {
         font-style: italic;
         top: 20px;
         bottom: 20px;
-        right: 0px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 15px;
         font-weight: 200;
         line-height: 15px;
         color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    header .card-h1 {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #{{ site.data.template.color.primary-dark }};
+    }
+    
+    header .card-h2 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    header .image-background {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: #{{ site.data.template.color.primary }};
+    }
+    
+    header .img {
+        margin-top: 5px;
+        margin-right: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    header .card {
+        /* Add shadows to create the "card" effect */
+        width: 80%;
+        height: 300px;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 10px;
+        border: 2px solid #{{ site.data.template.color.primary }};
+    }
+
+    header .container {
+        width: 100%;
+        padding: 2px 16px;
     }
 }
 
@@ -551,10 +673,11 @@ header .h3 {
     }
 
     header .image {
-        margin-top: -100px;
-        margin-left: -50px;
-        margin-right: 0px;
-        width: 150%;
+        display:block;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 100%;
     }
 
     header .left {
@@ -562,10 +685,11 @@ header .h3 {
     }
 
     header .right {
+        margin-right: -20px;
         padding-left: 0px;
-        padding-right: 50px;
-        padding-top: 50px;
-        width: 50%;
+        padding-right: 0px;
+        padding-top: 0px;
+        width: 30%;
     }
 
     header .intro-text {
@@ -576,22 +700,20 @@ header .h3 {
     header .h1 {
         top: 20px;
         bottom: 20px;
-        right: 0px;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 78px;
-        font-weight: 524;
-        line-height: 78px;
+        font-size: 58px;
+        font-weight: 800;
+        line-height: 58px;
         color: #{{ site.data.template.color.primary }};
     }
     
     header .h2 {
         top: 20px;
         bottom: 20px;
-        right: 0px;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 28px;
-        font-weight: 370;
-        line-height: 28px;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 21px;
         color: #{{ site.data.template.color.primary }};
     }
     
@@ -599,12 +721,207 @@ header .h3 {
         font-style: italic;
         top: 20px;
         bottom: 20px;
-        right: 0px;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 20px;
-        font-weight: 315;
-        line-height: 20px;
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 15px;
         color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    header .card-h1 {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #{{ site.data.template.color.primary-dark }};
+    }
+    
+    header .card-h2 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    header .image-background {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: #{{ site.data.template.color.primary }};
+    }
+    
+    header .img {
+        margin-right: 10px;
+        margin-top: 5px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    header .card {
+        /* Add shadows to create the "card" effect */
+        width: 80%;
+        height: 250px;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 10px;
+        border: 2px solid #{{ site.data.template.color.primary }};
+    }
+
+    header .container {
+        width: 100%;
+        padding: 2px 16px;
+    }
+}
+
+@media(min-width:1200px) {
+    header {
+        padding-left: 60px;
+        padding-right: 20px;
+        text-align: right;
+        background-attachment: scroll;
+        background-color: #{{ site.data.template.color.secondary-light }};
+        background-position: center center;
+        background-repeat: none;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    header .image {
+        display:block;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 100%;
+    }
+
+    header .left {
+        width: 40%;
+    }
+
+    header .right {
+        margin-right: -20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 0px;
+        width: 30%;
+    }
+
+    header .intro-text {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    header .h1 {
+        top: 20px;
+        bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 58px;
+        font-weight: 800;
+        line-height: 58px;
+        color: #{{ site.data.template.color.primary }};
+    }
+    
+    header .h2 {
+        top: 20px;
+        bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #{{ site.data.template.color.primary }};
+    }
+    
+    header .h3 {
+        font-style: italic;
+        top: 20px;
+        bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 15px;
+        color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    header .card-h1 {
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #{{ site.data.template.color.primary-dark }};
+    }
+    
+    header .card-h2 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: {{ site.data.template.font.primary }};
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px;
+        color: #{{ site.data.template.color.secondary-dark }};
+    }
+
+    header .image-background {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        background-color: #{{ site.data.template.color.primary }};
+    }
+    
+    header .img {
+        margin-right: 10px;
+        margin-top: 5px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    header .card {
+        /* Add shadows to create the "card" effect */
+        width: 80%;
+        height: 200px;
+        margin-top: -40px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+        transition: 0.3s;
+        border-radius: 10px;
+        border: 2px solid #{{ site.data.template.color.primary }};
+    }
+
+    header .container {
+        width: 100%;
+        padding: 2px 16px;
     }
 }
 
@@ -923,7 +1240,7 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #{{ site.data.template.color.secondary-dark }};
+    border: 5px solid #{{ site.data.template.color.primary }};
 }
 
 .team-member h4 {
