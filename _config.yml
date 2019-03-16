@@ -12,7 +12,7 @@ description: "Social Trading Ecosystem"
 
 # Team names, titles and social links
 people:
-- name: Anton
+- name: Anton Grigorev
   pic: 1
   position: Founder
   social:
@@ -25,7 +25,7 @@ people:
   description: Crypto enthusiast and blockchain developer. 2+ years of software development for scientific purposes (spacecraft), 1 year in DApps development from scratch.<br />Worked on mobile blockchain and fintech open source projects.<br />Specialist in Rocket engineering, Bauman Moscow State Technical University
 
 
-- name: Petr
+- name: Petr Korolev
   pic: 2
   position: Advisor
   social:
@@ -40,15 +40,15 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: github
-    url: https://github.com/FollowInc
+    url: https://github.com/Follow-Network
   - title: linkedin
-    url: https://www.linkedin.com/company/followinc/
+    url: https://www.linkedin.com/company/follow-network/
   - title: twitter
-    url: https://twitter.com/FollowInc
+    url: https://twitter.com/Follow_Network_
   - title: facebook
-    url: https://www.facebook.com/FollowInc
+    url: https://www.facebook.com/Follow-Network-799248240434821
   - title: medium
-    url: https://medium.com/@FollowInc
+    url: https://medium.com/@Follow_Network_
 
 # Postal address (add as many lines as necessary)
 address:

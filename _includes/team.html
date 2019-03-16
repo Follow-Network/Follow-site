@@ -1,33 +1,73 @@
 <!-- Team Section -->
-    <section id="team" class="bg-white">
+    <team id="team">
         <div class="container">
-            <div class="row" style="margin: 00px 0px 50px 0px;">
+            <div class="row" style="margin: 0px 0px 50px 0px;">
                 <div class="col-lg-12 text-center">
-                    <h1 class="section-heading">FOLLOW TEAM</h1>
+                    <div class="section-heading">FOLLOW TEAM</div>
                     <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
             <div class="row">
-                {% for member in site.people %}
                 <div class="col-sm-6">
                     <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="" width="200" height="200">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="" width="200" height="200">
                         <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
                             <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
+                                <a href="https://www.linkedin.com/in/nsspace/">
+                                    <i class="fa fa-linkedin"></i>
                                 </a>
                             </li>
-                            {% endfor %}
-
+                            <li>
+                                <a href="https://github.com/BaldyAsh">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/NS_Space">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
                         </ul>
-                        <h4>{{ member.name }}</h4>
-                        <h5>{{ member.position }}</h5>
-                        <p class="text-muted">{{ member.description }}</p>
+                        <div class="text-block">
+                            <div class="h1">Anton Grigorev</div>
+                            <div class="h2">Founder</div>
+                            <div class="text">Crypto enthusiast and blockchain developer</div>
+                            <div class="text">2+ years of software development for scientific purposes (spacecraft), 1 year in DApps development from scratch</div>
+                            <div class="text">Worked on mobile blockchain and fintech open source projects</div>
+                            <div class="text">Specialist in Rocket engineering, Bauman Moscow State Technical University</div>
+                        </div>
                     </div>
                 </div>
-                {% endfor %}
+                <div class="col-sm-6">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="" width="200" height="200">
+                        <ul class="list-inline social-buttons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/korolevpetr/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/skywinder">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/skywinder">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="text-block">
+                            <div class="h1">Petr Korolev</div>
+                            <div class="h2">Advisor</div>
+                            <div class="text">10+ years experience in enterprise development and architecture for fintech solutions (banking systems, stock exchanges)</div>
+                            <div class="text">Worked on information security and protection of personal data.</div>
+                            <div class="text">Author and active participant of open source projects</div>
+                            <div class="text">MSc in Solid-State Physics, Moscow State University</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </team>

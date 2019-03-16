@@ -1,3 +1,75 @@
-<section id="links" style="padding-top:60px;padding-bottom:75px;background-color:#000; " data-animationappear="off" data-bg-color="#000">
-    
+<section id="links" style="padding-top:60px;padding-bottom:75px;background-color:#white; " data-animationappear="off" data-bg-color="#000">
+    <div class="container" style="padding-left: 80px;">
+        <div class="row">
+            <div class="col-sm-2">
+                <p style="font-weight: 600; font-size: 14pt;">DOCUMENTS</p>
+                <ul>
+                    <li>
+                        <a href="">Risk warning</a>
+                    </li>
+                    <li>
+                        <a href="">Risk disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="">White Paper</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <p style="font-weight: 600; font-size: 14pt;">SOCIAL</p>
+                <ul>
+                    <li>
+                    <a href="https://www.facebook.com/Follow-Network-799248240434821">Facebook</a>
+                    </li>
+                    <li>
+                    <a href="https://www.linkedin.com/company/follow-network/">Linkedin</a>
+                    </li>
+                    <li>
+                    <a href="https://github.com/Follow-Network">Github</a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/Follow_Network_">Twitter</a>
+                    </li>
+                    <li>
+                    <a href="https://medium.com/@Follow_Network_">Medium</a>
+                    </li>
+                    <li>
+                    <a href="https://t.me/Follow_Network">Official Telegram Group<br></a>
+                    </li>
+                    <li>
+                    <h6 data-redactor-tag="span">Contact us</h6>
+                    <a href="mailto: hello@follow-network.org">Email</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <span class="copyright">Copyright &copy; Follow Network {{ 'now' | date: "%Y" }}</span>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-inline quicklinks">
+                    <li><a href="#">Privacy Policy</a>
+                    </li>
+                    <li><a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
