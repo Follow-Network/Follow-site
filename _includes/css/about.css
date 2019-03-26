@@ -1,6 +1,6 @@
 about {
     padding-left: 60px;
-    padding-right: auto;
+    padding-right: 60px;
     text-align: left;
     background-attachment: scroll;
     background-color: #{{ site.data.template.color.secondary-light }};
@@ -84,7 +84,7 @@ about .card-h1 {
 
 about .card-h2 {
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
@@ -136,7 +136,7 @@ about .card {
 }
 
 about .card .card-text {
-    margin-top: -140px;
+    margin-top: -135px;
     margin-left: 40px;
     margin-right: 10px;
 }
@@ -148,7 +148,7 @@ about .card:hover {
 
 /* Add some padding inside the card container */
 about .container {
-    width: 100%;
+    width: 90%;
     padding: 40px 16px;
 }
 
@@ -156,7 +156,7 @@ about .container {
 
     about {
         padding-left: 60px;
-        padding-right: auto;
+        padding-right: 60px;
         text-align: left;
         background-attachment: scroll;
         background-color: #{{ site.data.template.color.secondary-light }};
@@ -240,7 +240,7 @@ about .container {
     
     about .card-h2 {
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
@@ -255,7 +255,7 @@ about .container {
         display: block;
         margin-left: -30px;
         margin-right: auto;
-        margin-top: 40px;
+        margin-top: 15px;
         width: 60px;
         height: 60px;
         border-radius: 100%;
@@ -280,7 +280,7 @@ about .container {
     about .card {
         /* Add shadows to create the "card" effect */
         width: 90%;
-        height: 150px;
+        height: 90px;
         margin-top: -40px;
         margin-left: auto;
         margin-right: auto;
@@ -292,13 +292,13 @@ about .container {
     }
     
     about .card .card-text {
-        margin-top: -150px;
+        margin-top: -130px;
         margin-left: 40px;
         margin-right: 10px;
     }
 
     about .container {
-        width: 100%;
+        width: 97%;
         padding: 40px 16px;
     }
 }
@@ -307,7 +307,7 @@ about .container {
 
     about {
         padding-left: 60px;
-        padding-right: auto;
+        padding-right: 60px;
         text-align: left;
         background-attachment: scroll;
         background-color: #{{ site.data.template.color.secondary-light }};
@@ -391,7 +391,7 @@ about .container {
     
     about .card-h2 {
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
@@ -406,7 +406,7 @@ about .container {
         display: block;
         margin-left: -30px;
         margin-right: auto;
-        margin-top: 30px;
+        margin-top: 25px;
         width: 60px;
         height: 60px;
         border-radius: 100%;
@@ -431,7 +431,7 @@ about .container {
     about .card {
         /* Add shadows to create the "card" effect */
         width: 90%;
-        height: 130px;
+        height: 110px;
         margin-top: -40px;
         margin-left: auto;
         margin-right: auto;
@@ -449,7 +449,7 @@ about .container {
     }
 
     about .container {
-        width: 100%;
+        width: 95%%;
         padding: 40px 16px;
     }
 }
@@ -457,7 +457,7 @@ about .container {
 @media(min-width:1200px) {
     about {
         padding-left: 60px;
-        padding-right: auto;
+        padding-right: 60px;
         text-align: left;
         background-attachment: scroll;
         background-color: #{{ site.data.template.color.secondary-light }};
@@ -533,22 +533,22 @@ about .container {
         margin-top: 60px;
         margin-bottom: 10px;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
-        line-height: 20px;
+        line-height: 28px;
         color: #{{ site.data.template.color.primary-dark }};
     }
     
     about .card-h2 {
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5px;
         font-family: {{ site.data.template.font.primary }};
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 200;
-        line-height: 18px;
+        line-height: 24px;
         color: #{{ site.data.template.color.secondary-dark }};
     }
 
@@ -556,7 +556,7 @@ about .container {
         display: block;
         margin-left: -40px;
         margin-right: auto;
-        margin-top: 20px;
+        margin-top: 25px;
         width: 80px;
         height: 80px;
         border-radius: 100%;
@@ -593,13 +593,13 @@ about .container {
     }
     
     about .card .card-text {
-        margin-top: -140px;
+        margin-top: -160px;
         margin-left: 50px;
         margin-right: 10px;
     }
 
     about .container {
-        width: 100%;
+        width: 90%;
         padding: 40px 16px;
     }
 }

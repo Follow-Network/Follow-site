@@ -125,7 +125,7 @@ header {
     padding-right: auto;
     text-align: center;
     background-attachment: scroll;
-    background-color: #{{ site.data.template.color.secondary-light }};
+    background-color: #{{ site.data.template.color.primary-light }};
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -263,7 +263,7 @@ header .container {
         padding-right: auto;
         text-align: right;
         background-attachment: scroll;
-        background-color: #{{ site.data.template.color.secondary-light }};
+        background-color: #{{ site.data.template.color.primary-light }};
         background-position: center center;
         background-repeat: none;
         -webkit-background-size: cover;
@@ -405,7 +405,7 @@ header .container {
         padding-right: auto;
         text-align: right;
         background-attachment: scroll;
-        background-color: #{{ site.data.template.color.secondary-light }};
+        background-color: #{{ site.data.template.color.primary-light }};
         background-position: center center;
         background-repeat: none;
         -webkit-background-size: cover;
@@ -546,7 +546,7 @@ header .container {
         padding-right: auto;
         text-align: right;
         background-attachment: scroll;
-        background-color: #{{ site.data.template.color.secondary-light }};
+        background-color: #{{ site.data.template.color.primary-light }};
         background-position: center center;
         background-repeat: none;
         -webkit-background-size: cover;

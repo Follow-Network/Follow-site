@@ -1,75 +1,153 @@
-<section id="links" style="padding-top:60px;padding-bottom:75px;background-color:#white; " data-animationappear="off" data-bg-color="#000">
-    <div class="container" style="padding-left: 80px;">
+<links id="links">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-2">
-                <p style="font-weight: 600; font-size: 14pt;">DOCUMENTS</p>
-                <ul>
+            <div class="col-sm-4 container-1">
+                <div class="title">Follow</div>
+                <div class="copyright">Copyright &copy; Follow Network {{ 'now' | date: "%Y" }}</div>
+                <ul class="list-inline social-buttons" style="margin-left: -15px;">
                     <li>
-                        <a href="">Risk warning</a>
+                        <a href="https://github.com/Follow-Network">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x" style="margin-left: 5px;"></i>
+                                <i class="fa fa-github fa-1x" style="margin-left: 16px;"></i>
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Risk disclaimer</a>
+                        <a href="https://www.linkedin.com/company/follow-network/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x" style="margin-left: 5px;"></i>
+                                <i class="fa fa-linkedin fa-1x" style="margin-left: 16px;"></i>
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Privacy Policy</a>
+                        <a href="https://twitter.com/Follow_Network_">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x" style="margin-left: 5px;"></i>
+                                <i class="fa fa-twitter fa-1x" style="margin-left: 16px;"></i>
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Cookie Policy</a>
+                        <a href="https://www.facebook.com/Follow-Network-799248240434821">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x" style="margin-left: 5px;"></i>
+                                <i class="fa fa-facebook fa-1x" style="margin-left: 16px;"></i>
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="">White Paper</a>
+                        <a href="https://medium.com/@Follow_Network_">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-square-o fa-stack-2x" style="margin-left: 5px;"></i>
+                                <i class="fa fa-medium fa-1x" style="margin-left: 16px;"></i>
+                            </span>
+                        </a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-sm-2">
-                <p style="font-weight: 600; font-size: 14pt;">SOCIAL</p>
-                <ul>
-                    <li>
-                    <a href="https://www.facebook.com/Follow-Network-799248240434821">Facebook</a>
-                    </li>
-                    <li>
-                    <a href="https://www.linkedin.com/company/follow-network/">Linkedin</a>
-                    </li>
-                    <li>
-                    <a href="https://github.com/Follow-Network">Github</a>
-                    </li>
-                    <li>
-                    <a href="https://twitter.com/Follow_Network_">Twitter</a>
-                    </li>
-                    <li>
-                    <a href="https://medium.com/@Follow_Network_">Medium</a>
-                    </li>
-                    <li>
-                    <a href="https://t.me/Follow_Network">Official Telegram Group<br></a>
-                    </li>
-                    <li>
-                    <h6 data-redactor-tag="span">Contact us</h6>
-                    <a href="mailto: hello@follow-network.org">Email</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <span class="copyright">Copyright &copy; Follow Network {{ 'now' | date: "%Y" }}</span>
-            </div>
-            <div class="col-md-2">
-                <ul class="list-inline social-buttons">
-                    {% for network in site.social %}
-                    <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="col-md-2">
-                <ul class="list-inline quicklinks">
-                    <li><a href="#">Privacy Policy</a>
-                    </li>
-                    <li><a href="#">Terms of Use</a>
-                    </li>
-                </ul>
+                <a href="mailto:info@follow-network.org">
+                    <div class="mail">General info: info@follow-network.org</div>
+                </a>
+                <a href="mailto:support@follow-network.org">
+                    <div class="mail">Technical support: support@follow-network.org</div>
+                </a>
+            </div>    
+            <div class="col-sm-8 container-4">
+                <div class="row">
+                    <div class="col-sm-3" style="margin-left: 20px; margin-right: 20px;">
+                        <div class="h1">Documents</div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Risk disclaimer</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Privacy Policy</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Cookie Policy</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Terms of use</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">White Paper</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3" style="margin-left: 20px; margin-right: 20px;">
+                        <div class="h1">About</div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="h2">How does this work</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Fees</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Security</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Company</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Competitors</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3" style="margin-left: 20px; margin-right: 20px;">
+                        <div class="h1">Support</div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Contact us</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Status</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Release notes</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="h2">Announcements</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="h2">
+            Risk warning
+        </div>
+        <div class="h3">
+            All trading involves risk of capital loss. When using Follow Network services to purchase cryptocurrencies and copy some traders or services actions on real Exchanges you will not benefit from the same protections available to clients receiving MiFID regulated investment services. Under no circumstances shall Follow Network have any liability to any person or entity for any loss or damage in whole or part caused by, resulting from, or relating to any transactions related to Cryptocurrencies or any direct, indirect, special, consequential or incidental damages whatsoever, including copied actions. Trading with Follow by following and/or copying or replicating the trades of other traders and services involves a high level of risks. Such risks include the risk that you may be replicating the trading decisions of possibly inexperienced/unprofessional traders, or traders whose financial status may differ from yours, or decisions made by the trading algorithm, which may not be perfect. Past performance of any user or service in Follow Network platform is not a reliable indicator of his future performance. Some of the content on Follow Network's copy-trading platform is generated by members and does not contain advice or recommendations by or on behalf of Follow Network.
+        </div>
     </div>
-</section>
+</links>
